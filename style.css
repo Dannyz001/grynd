@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.background{
+    background-image: url("Bg Imagenew.png");
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.9);
+    height: 1024px;
+    width: 1440px;
+    padding: 10px 70px 0 90px;
+
+}
+header ul li{
+    list-style-type: none;
+    
+    font-size: 18px;
+    margin: 5px;
+    
+
+}
+header ul a:hover{
+
+border: 1px solid white;
+}
+header ul a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    
+}
+header{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    justify-content: space-between;
+    
+}
+header ul{
+    display: flex;
+    flex-direction: row;
+    margin-right: 20px;
+    align-self: flex-end;
+    z-index: 2;
+}
+header h3{
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 47px;
+
+}
+.main-container{
+    display: flex;
+    padding: 20px 0;
+}
+.container1{
+    margin-top: 210px;
+}
+
+.container1 h3{
+    
+        font:Oswald;
+        font-weight:700px;
+        font-size:40px;
+        line-height:59.28px;
+        color: white;
+        margin-bottom: 10px;
+}
+.container1 p{
+        font-weight:400px;
+        font-size: 18px;
+        line-height:24px;
+        color: white;  
+        width: 485px;
+        text-align:justify; 
+}
+
+#btn{
+    display: inline-block;
+    background-color: #9E7666;
+    text-align: center;
+    margin: 50px 0;
+    padding: 18px 80px;
+    border-radius: 50px;
+    color: white;
+    font-weight: 600px;
+    font-size: 18px;
+    text-decoration: none;
+    line-height: 24px;
+}
+
+ #btn:hover{
+    background-color: #9e5336;
+    font-size: 20px;
+}
+.container2{
+    display: flex;
+    width: 60%;
+    height: 1000%;
+    background-image: url("images/Hero Bg.png" );
+    background-repeat: no-repeat;
+    background-position: center;
+   
+    
+    
+}
+.container2 img{
+    display: flex;
+    margin-bottom: 40px;
+position:relative;
+bottom: 78px;
+
+}
