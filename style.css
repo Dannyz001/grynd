@@ -1,116 +1,148 @@
+/*Google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+/*Reset*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    font-family: "Lato";
 
-.background{
-    background-image: url("images/Bg Imagenew.png");
+}
+
+.body-background{
+
+    padding: 0 40px;
+    background-image: url("images/Bg Image.png");
     background-repeat: no-repeat;
-    background-color: rgba(0, 0, 0, 0.9);
-    height: 1024px;
-    width: 1440px;
-    padding: 10px 70px 0 90px;
+    background-color:#16181d;
+}
 
+.center{
+    max-width: 1196px;
+    margin: auto;
 }
-header ul li{
-    list-style-type: none;
-    
-    font-size: 18px;
-    margin: 5px;
-    
 
-}
-header ul a:hover{
-
-border: 1px solid white;
-}
-header ul a{
-    text-decoration: none;
-    color: white;
-    padding: 10px 20px;
-    
-}
-header{
+.nav-arrangement{
     display: flex;
-    flex-direction: row;
     color: white;
     justify-content: space-between;
+    padding: 20px 0 ;
+    align-items: flex-end ;
     
 }
-header ul{
+
+.nav-style{
     display: flex;
     flex-direction: row;
-    margin-right: 20px;
-    align-self: flex-end;
-    z-index: 2;
-}
-header h3{
-font-style: normal;
-font-weight: 700;
-font-size: 32px;
-line-height: 47px;
-
-}
-.main-container{
-    display: flex;
-    padding: 20px 0;
-}
-.container1{
-    margin-top: 210px;
+    gap: 40px;
+   
 }
 
-.container1 h3{
+.nav-style li{
+    list-style-type: none;
+}
+
+.nav-link{
     
-        font:Oswald;
-        font-weight:700px;
-        font-size:40px;
-        line-height:59.28px;
-        color: white;
-        margin-bottom: 10px;
-}
-.container1 p{
-        font-weight:400px;
-        font-size: 18px;
-        line-height:24px;
-        color: white;  
-        width: 485px;
-        text-align:justify; 
+     text-decoration: none;
+     font-weight: 700;
+     font-size: 18px;
+     line-height: 24px;
+     color: white;   
+     
+ }
+
+.nav-link:hover{
+display: flex;
+border: 1px solid white;
+
 }
 
-#btn{
+.main_content{
+    display: flex;
+    padding: 20px 0 0;
+    
+}
+
+.content_description{
+    margin-top: 90px;
+    width: 50%;
+}
+
+.description_heading{
+    
+    font-weight:700px;
+    font-size:40px;
+    line-height:59px;
+    color: white;
+    margin-bottom: 20px;
+}
+.description_subhead{
+    font-weight:400px;
+    font-size: 18px;
+    line-height:24px;
+    color: white;
+    text-align:justify; 
+    margin-bottom: 45px;
+}
+
+#CTA{
     display: inline-block;
     background-color: #9E7666;
     text-align: center;
-    margin: 50px 0;
-    padding: 18px 80px;
+    padding: 24px 98px;
     border-radius: 50px;
     color: white;
     font-weight: 600px;
     font-size: 18px;
     text-decoration: none;
     line-height: 24px;
+    margin-bottom: 20px;
 }
 
- #btn:hover{
+ #CTA:hover{
     background-color: #9e5336;
     font-size: 20px;
 }
-.container2{
-    display: flex;
-    width: 60%;
-    height: 1000%;
-    background-image: url("images/Hero Bg.png" );
-    background-repeat: no-repeat;
-    background-position: center;
+
+.content_img{
+width: 50%;   
+  }
+.content_img img{
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    
+    .body-background{
    
+   } 
+   .nav-style{
+    display: none;
+   }
+   .main_content{
+    display: block;
     
     
 }
-.container2 img{
-    display: flex;
-    margin-bottom: 40px;
-position:relative;
-bottom: 78px;
-
+   .content_description{
+    
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    
+}
+.description_subhead{
+    text-align: center;
+}
+#CTA{
+    padding: 18px 60px;
+    justify-self: center;
+}
+.content_img{
+    width: 100%;   
+}
 }
